@@ -154,23 +154,6 @@ Open **http://localhost:5173** in your browser.
 | `POST` | `/api/debug` | Raw PDF table/text debug data |
 | `GET`  | `/api/preview` | Serve decrypted PDF for preview |
 
-## HDFC Statement Parsing (Details)
-
-HDFC statements use a unique format where **all transactions are merged into a single table row**, with `\n` separators in each cell.
-
-### Narration Grouping Strategy
-
-Each transaction's narration ends with one of these markers:
-
-| Pattern | Example |
-|---------|---------|
-| `Ref <digits>` on same line | `01/01/2026 Ref 600114982784` |
-| `Ref` at line end + digits on next line | `...Value Dt 03/01/2026 Ref` → `600335454148` |
-| `Value Dt DD/MM/YYYY` without Ref | `Value Dt 06/01/2026` |
-
-### Transaction Type Prefixes
-
-`IMPS` · `UPI` · `NEFT` · `RTGS` · `POS` · `FT` · `ACH` · `ECS` · `ATM` · `NACH`
 
 ## Tech Stack
 
