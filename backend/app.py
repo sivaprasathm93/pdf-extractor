@@ -471,6 +471,11 @@ def is_date(text):
 # ─── API Routes ──────────────────────────────────────────────────────────────
 
 
+@app.route("/health", methods=["GET"])
+def health():
+    """Keep-alive health check endpoint."""
+    return jsonify({"status": "ok"}), 200
+
 @app.route("/api/debug", methods=["POST"])
 def debug_pdf():
     """Debug endpoint: show raw table and text extraction for diagnosis."""
