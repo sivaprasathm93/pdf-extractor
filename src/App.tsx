@@ -5,6 +5,7 @@
 
 import { useState, useMemo, useEffect, useRef, ChangeEvent } from 'react'
 import { ThemeProvider, CssBaseline, Box, Container, Alert, Snackbar, Typography } from '@mui/material'
+import { VisibilityOutlined, AutoAwesomeOutlined, FileDownloadOutlined } from '@mui/icons-material'
 import axios from 'axios'
 
 import { getTheme } from './theme'
@@ -455,9 +456,9 @@ export default function App() {
                     {/* Right: Analytics counters */}
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 2.5 }}>
                         {[
-                            { label: 'Visits', value: analyticsData.page_visit, icon: '👁' },
-                            { label: 'Extracts', value: analyticsData.extract_click, icon: '📊' },
-                            { label: 'Exports', value: analyticsData.export_click, icon: '📥' },
+                            { label: 'Visits', value: analyticsData.page_visit, icon: <VisibilityOutlined sx={{ fontSize: 18 }} /> },
+                            { label: 'Extracts', value: analyticsData.extract_click, icon: <AutoAwesomeOutlined sx={{ fontSize: 18 }} /> },
+                            { label: 'Exports', value: analyticsData.export_click, icon: <FileDownloadOutlined sx={{ fontSize: 18 }} /> },
                         ].map(({ label, value, icon }) => (
                             <Box
                                 key={label}
@@ -467,7 +468,7 @@ export default function App() {
                                     gap: 0.75,
                                 }}
                             >
-                                <Typography sx={{ fontSize: '0.95rem' }}>{icon}</Typography>
+                                <Box sx={{ color: isDark ? '#8ab4f8' : '#1a73e8', display: 'flex', alignItems: 'center' }}>{icon}</Box>
                                 <Typography
                                     sx={{
                                         fontSize: '0.9rem',
