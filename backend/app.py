@@ -7,6 +7,7 @@ from flask_cors import CORS
 import fitz  # PyMuPDF
 from openpyxl import Workbook
 from openpyxl.styles import Font, Alignment, Border, Side, PatternFill
+from analytics import track_event, get_stats, get_recent_events
 
 app = Flask(__name__)
 CORS(app)
@@ -706,6 +707,41 @@ def export_excel():
         download_name="bank_statement.xlsx",
         mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     )
+
+
+# ─── Analytics Routes ─────────────────────────────────────────────────────────
+
+
+@app.route("/api/track", methods=["POST"])
+def track():
+    """Record an analytics event."""
+    data = request.json
+    if not data or "event" not in data:
+        return jsonify({"error": "Missing event field"}), 400
+
+    event_type = data["event"]
+    allowed = ["page_visit", "extract_click", "export_click", "preview_click"]
+    if event_type not in allowed:
+        return jsonify({"error": f"Unknown event type: {event_type}"}), 400
+
+    ip = request.headers.get("X-Forwarded-For", request.remote_addr)
+    ua = request.headers.get("User-Agent", "")
+    track_event(event_type, ip_address=ip, user_agent=ua)
+
+    return jsonify({"success": True}), 200
+
+
+@app.route("/api/analytics", methods=["GET"])
+def analytics():
+    """Get aggregate analytics stats."""
+    return jsonify(get_stats())
+
+
+@app.route("/api/analytics/events", methods=["GET"])
+def analytics_events():
+    """Get recent analytics events."""
+    limit = request.args.get("limit", 50, type=int)
+    return jsonify(get_recent_events(limit))
 
 
 if __name__ == "__main__":

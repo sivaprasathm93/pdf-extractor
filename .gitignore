@@ -24,7 +24,7 @@ dist-ssr
 *.sw?
 
 # Nx cache
-.nx/cache
+.nx/
 
 # Python
 __pycache__/
