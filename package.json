@@ -1,0 +1,52 @@
+{
+  "name": "pdf-extractor",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "nx": {
+    "targets": {
+      "dev": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "vite"
+        }
+      },
+      "build": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "vite build"
+        }
+      },
+      "preview": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "vite preview"
+        },
+        "dependsOn": [
+          "build"
+        ]
+      },
+      "backend": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "py -3.12 backend/app.py"
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.4",
+    "nx": "^21.3.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.8",
+    "@mui/material": "^7.3.8",
+    "axios": "^1.13.5",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}

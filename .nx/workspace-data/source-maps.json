@@ -1,0 +1,112 @@
+{
+  ".": {
+    "root": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageVersion": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.executor": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.options": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.options.command": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.command": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.preview": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.preview.executor": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.preview.options": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.preview.dependsOn": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.preview.options.command": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.backend": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.backend.executor": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.backend.options": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.backend.options.command": [
+      "package.json",
+      "nx/core/package-json"
+    ]
+  }
+}

@@ -1,0 +1,231 @@
+/* ═══════════════════════════════════════════════════════
+   App.css – Google-style UX for PDF Extractor
+   ═══════════════════════════════════════════════════════ */
+
+/* ── App Bar (Google-style white top bar) ────────────── */
+.google-appbar {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e8eaed !important;
+}
+
+.google-appbar-dark {
+    background: #202124 !important;
+    border-bottom: 1px solid #3c4043 !important;
+}
+
+/* ── File Chip ───────────────────────────────────────── */
+.file-chip {
+    background-color: #e8f0fe !important;
+    color: #1a73e8 !important;
+    border: 1px solid #c5d8fb !important;
+    font-weight: 500 !important;
+    font-size: 0.78rem !important;
+}
+
+.file-chip .MuiChip-deleteIcon {
+    color: #5f84db !important;
+}
+
+.file-chip-dark {
+    background-color: rgba(138, 180, 248, 0.1) !important;
+    color: #8ab4f8 !important;
+    border: 1px solid rgba(138, 180, 248, 0.3) !important;
+}
+
+/* ── Logo branding text ──────────────────────────────── */
+.google-brand {
+    font-family: 'Google Sans', 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.15rem;
+    letter-spacing: -0.2px;
+}
+
+/* ── Theme Toggle ────────────────────────────────────── */
+.theme-toggle {
+    color: #5f6368 !important;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(95, 99, 104, 0.08) !important;
+}
+
+/* ── Action Toolbar (Google Drive-style) ─────────────── */
+.action-toolbar {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-bottom: 1px solid #e8eaed;
+}
+
+.action-toolbar-dark {
+    border-bottom-color: #3c4043;
+}
+
+/* ── Password Field ──────────────────────────────────── */
+.password-field {
+    width: 190px;
+}
+
+.password-field .MuiOutlinedInput-root {
+    border-radius: 4px !important;
+    font-size: 0.875rem !important;
+}
+
+.password-field .MuiInputLabel-root {
+    font-size: 0.85rem;
+}
+
+/* ── Divider between toolbar sections ─────────────────── */
+.toolbar-divider {
+    width: 1px;
+    height: 28px;
+    background-color: #e8eaed;
+    margin: 0 4px;
+}
+
+.toolbar-divider-dark {
+    background-color: #3c4043;
+}
+
+/* ── Google Drive-style Upload Button ────────────────── */
+.upload-btn {
+    border: 1px solid #dadce0 !important;
+    color: #3c4043 !important;
+    background: #fff !important;
+    border-radius: 4px !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    padding: 7px 16px !important;
+    box-shadow: none !important;
+    transition: background 0.15s, box-shadow 0.2s !important;
+}
+
+.upload-btn:hover {
+    background: #f8f9fa !important;
+    box-shadow: 0 1px 3px rgba(60, 64, 67, 0.2) !important;
+}
+
+.upload-btn-dark {
+    border: 1px solid #3c4043 !important;
+    color: #e8eaed !important;
+    background: #292a2d !important;
+}
+
+.upload-btn-dark:hover {
+    background: #35363a !important;
+}
+
+/* ── Empty State (Google Drive-style) ────────────────── */
+.empty-state {
+    text-align: center;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.empty-state-illustration {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8f0fe;
+    border-radius: 50%;
+}
+
+.empty-state-illustration-dark {
+    background: rgba(138, 180, 248, 0.1) !important;
+}
+
+/* ── Transaction Table ────────────────────────────────── */
+.data-table-header-cell {
+    font-weight: 500 !important;
+    color: #5f6368 !important;
+    font-size: 0.8rem !important;
+    white-space: nowrap;
+    background: #f8f9fa !important;
+    border-bottom: 2px solid #e8eaed !important;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.data-table-header-cell-dark {
+    color: #9aa0a6 !important;
+    background: #292a2d !important;
+    border-bottom: 2px solid #3c4043 !important;
+}
+
+.data-table-body-cell {
+    font-size: 0.875rem !important;
+    color: #202124 !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.data-table-body-cell-dark {
+    color: #e8eaed !important;
+}
+
+.data-table-details {
+    max-width: 320px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table-row-hover:hover {
+    background-color: #f8f9fa !important;
+}
+
+.table-row-hover-dark:hover {
+    background-color: #35363a !important;
+}
+
+.amount-debit {
+    color: #ea4335 !important;
+    font-weight: 500 !important;
+}
+
+.amount-credit {
+    color: #34a853 !important;
+    font-weight: 500 !important;
+}
+
+.amount-balance {
+    color: #202124 !important;
+    font-weight: 500 !important;
+}
+
+.amount-balance-dark {
+    color: #e8eaed !important;
+}
+
+/* ── Animations ──────────────────────────────────────── */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.25s ease-out;
+}
+
+/* ── Google-style Snackbar ───────────────────────────── */
+.google-snackbar .MuiSnackbarContent-root {
+    background-color: #323232;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}

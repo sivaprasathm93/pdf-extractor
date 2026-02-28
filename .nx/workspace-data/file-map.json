@@ -1,0 +1,114 @@
+{
+  "version": "6.0",
+  "nxVersion": "22.5.2",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "pdf-extractor": [
+        {
+          "file": ".gitignore",
+          "hash": "13046175384202504187"
+        },
+        {
+          "file": "PENDING_TASKS.md",
+          "hash": "4870565792141473014"
+        },
+        {
+          "file": "README.md",
+          "hash": "14371173411460786498"
+        },
+        {
+          "file": "TEACH_ME.md",
+          "hash": "14430702763228826004"
+        },
+        {
+          "file": "backend/__pycache__/app.cpython-312.pyc",
+          "hash": "13611030528851679131"
+        },
+        {
+          "file": "backend/app.py",
+          "hash": "3199548598305516109"
+        },
+        {
+          "file": "backend/bank_rules.py",
+          "hash": "6008741399233102138"
+        },
+        {
+          "file": "backend/requirements.txt",
+          "hash": "5366970945134484859"
+        },
+        {
+          "file": "index.html",
+          "hash": "2026636063731730298"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "5863849164562519764"
+        },
+        {
+          "file": "package.json",
+          "hash": "18157476667626104944"
+        },
+        {
+          "file": "src/App.css",
+          "hash": "5490621535085730216"
+        },
+        {
+          "file": "src/App.tsx",
+          "hash": "14255788225096670504"
+        },
+        {
+          "file": "src/components/ActionBar.tsx",
+          "hash": "1463430497168815416"
+        },
+        {
+          "file": "src/components/AppHeader.tsx",
+          "hash": "14991731896388247144"
+        },
+        {
+          "file": "src/components/EmptyState.tsx",
+          "hash": "10289139113829139383"
+        },
+        {
+          "file": "src/components/PasswordDialog.tsx",
+          "hash": "14740440977063012477"
+        },
+        {
+          "file": "src/components/PdfPreview.tsx",
+          "hash": "10349940822644746484"
+        },
+        {
+          "file": "src/components/TransactionTable.tsx",
+          "hash": "13294860356530363797"
+        },
+        {
+          "file": "src/index.css",
+          "hash": "12808265819829879741"
+        },
+        {
+          "file": "src/main.tsx",
+          "hash": "15994099419394194085"
+        },
+        {
+          "file": "src/theme.ts",
+          "hash": "1057223868213266065"
+        },
+        {
+          "file": "src/types.ts",
+          "hash": "1828745900839527705"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "13167407538868482792"
+        },
+        {
+          "file": "vite.config.ts",
+          "hash": "17602707887827137893"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  },
+  "externalNodesHash": "4165826900086338498"
+}
